@@ -2,13 +2,52 @@
 <link rel=stylesheet href="bootstrap/css/bootstrap.min.css">
 <link rel=stylesheet href="bootstrap/css/bootstrap-responsive.min.css">
 <style>
-  .tag {
-    background:#2c2c2c;
+  body {
+    background:url(img/furley_bg.png);
+  }
+  .hero-unit h1 {
+    font-family:serif;
+  }
+  .hero-unit {
+    background:none;
+  }
+  @media (min-width: 768px) { 
+    .navbar-inner {
+      border-radius:0;
+    }
+  }
+  .foot {
+    background: rgb(63,76,107);
     color:#eee;
     padding-top:1em;
+    margin-top:20px;
+    margin-bottom:0;
+    padding-bottom:50px;
+  }
+  .tag {
+    background: rgb(63,76,107);
+    color:#eee;
+    padding-top:1em;
+    box-shadow: 0 5px 5px #888;
+    margin-bottom:20px;
+  }
+  p {
+    text-align:justify;
+  }
+  @media (max-width: 768px) {
+    .tag {
+      margin-left:-20px;
+      padding-left:20px;
+      
+      margin-right:-20px;
+      padding-right:20px;
+    }
+    .hero-unit h1 {
+      font-size:36px;
+    }
   }
 </style>
-<div class="navbar navbar-fixed-top">
+<div class="navbar">
   <div class="navbar-inner">
     <div class="container">
       <ul class="nav">
@@ -37,6 +76,13 @@
     <div class="span6">
       <h2>Section 1</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper venenatis orci. Sed tempor ullamcorper sem non sodales. Curabitur dapibus ultrices mi, viverra posuere urna luctus id. Proin molestie urna quis velit volutpat dignissim. Praesent metus orci, venenatis ac egestas ac, accumsan a quam. Cras eu lorem tellus, eget facilisis sem. Aliquam ornare libero porta sem sollicitudin feugiat. Duis convallis nulla ut metus consequat non blandit sapien lobortis. Fusce fermentum, dolor vitae mattis tristique, libero dolor ultricies mauris, non scelerisque lacus felis ac erat. Sed odio nisi, pharetra id auctor vitae, rhoncus id nisl. Nulla varius, felis et varius rhoncus, neque erat tempus arcu, dignissim laoreet massa sapien non odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi.</p>
+    </div>
+  </div>
+</div>
+<div class="foot">
+  <div class="row">
+    <div class="span10 offset1">
+      <p>Copyright 2012 - peerreviewit.github.com</p>
     </div>
   </div>
 </div>
