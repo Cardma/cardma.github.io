@@ -1,100 +1,76 @@
-<!DOCTYPE html>
-<link rel=stylesheet href="bootstrap/css/bootstrap.min.css">
-<link rel=stylesheet href="bootstrap/css/bootstrap-responsive.min.css">
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+</head>
 <style>
+  * { margin:0; padding:0; }
+  html, body {
+    height:100%;
+  }
   body {
-    background:url(img/furley_bg.png);
+    background:url(img/low_contrast_linen.png);
   }
-  .hero-unit h1 {
-    font-family:serif;
+  h1 small {
+    font-size:.4em;
+    font-weight:normal;
+    display:block;
   }
-  .hero-unit {
-    color:rgb(43,56,87);
-    background:none;
+  #slider {
+    padding-top:150px;
   }
-  .foot {
-    background: rgb(63,76,107);
-    color:#eee;
-    padding-top:1em;
+  #navigation {
+    background:rgba(150,150,150,.5);
+    padding:10px;
+    width:320px;
+    margin-left:auto;
+    margin-right:auto;
     margin-top:20px;
-    margin-bottom:0;
-    padding-bottom:50px;
   }
-  .tag {
-    background: rgb(63,76,107);
-    color:#eee;
-    padding-top:1em;
-    box-shadow: 0 5px 5px #888;
-    margin-bottom:20px;
+  #bumper {
+    height:100%;
   }
-  p {
-    text-align:justify;
+  #footer {
+    margin-top:-50px;
+    height:50px;
+    background:white;
   }
-  @media (max-width: 768px) {
-    /* Small Screen */
-    .tag, .foot {
-      margin-left:-20px;
-      padding-left:20px;
-      
-      margin-right:-20px;
-      padding-right:20px;
-    }
-    .hero-unit h1 {
-      font-size:36px;
-    }
-    h1 small {
-      display:block;
-    }
-  }
-  @media (min-width: 768px) { 
-    /* Large Screen */
-    .navbar-inner {
-      border-radius:0;
-    }
-    h1 small {
-      white-space:nowrap;
-      
-    }
+  .cards > div > div {
+    width :320px;
+    height:160px;
+    background: white;
+    border:1px solid gray;
+    margin:0 auto;
+    padding:10px;
   }
 </style>
-<div class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-      <ul class="nav">
-        <li class="active"><a href="/">Home</a></li>
-      </ul>
+<body>
+<div id="bumper">
+<div id="container">
+  <div id='slider' class='swipe'>
+    <div class="cards">
+      <div style='display:block'><div>
+        <h1>Card Tap App <small>A Realistic - Nearly Tactile Experience on the iPhone</small></h1>
+      </div></div>
+      <div style='display:none'><div>2</div></div>
+      <div style='display:none'><div>3</div></div>
+      <div style='display:none'><div>4</div></div>
+      <div style='display:none'><div>5</div></div>
     </div>
   </div>
 </div>
-<div class="hero-unit">
-  <h1>Hello World</h1>
+<div id="navigation">
+  <span style="float:left;"><a href='#' onclick='slider4.prev();return false;'>prev</a></span>
+  <span style="float:right;"><a href='#' onclick='slider4.next();return false;'>next</a></span>
+  <span style="clear:both">&nbsp;</span>
 </div>
-<div class="tag">
-  <div class="row">
-    <div class="span8 offset2">
-      <h2>Tag Line</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="span6">
-      <h2>Section 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper venenatis orci. Sed tempor ullamcorper sem non sodales. Curabitur dapibus ultrices mi, viverra posuere urna luctus id. Proin molestie urna quis velit volutpat dignissim. Praesent metus orci, venenatis ac egestas ac, accumsan a quam. Cras eu lorem tellus, eget facilisis sem. Aliquam ornare libero porta sem sollicitudin feugiat. Duis convallis nulla ut metus consequat non blandit sapien lobortis. Fusce fermentum, dolor vitae mattis tristique, libero dolor ultricies mauris, non scelerisque lacus felis ac erat. Sed odio nisi, pharetra id auctor vitae, rhoncus id nisl. Nulla varius, felis et varius rhoncus, neque erat tempus arcu, dignissim laoreet massa sapien non odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi.</p>
-    </div>
-    <div class="span6">
-      <h2>Section 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper venenatis orci. Sed tempor ullamcorper sem non sodales. Curabitur dapibus ultrices mi, viverra posuere urna luctus id. Proin molestie urna quis velit volutpat dignissim. Praesent metus orci, venenatis ac egestas ac, accumsan a quam. Cras eu lorem tellus, eget facilisis sem. Aliquam ornare libero porta sem sollicitudin feugiat. Duis convallis nulla ut metus consequat non blandit sapien lobortis. Fusce fermentum, dolor vitae mattis tristique, libero dolor ultricies mauris, non scelerisque lacus felis ac erat. Sed odio nisi, pharetra id auctor vitae, rhoncus id nisl. Nulla varius, felis et varius rhoncus, neque erat tempus arcu, dignissim laoreet massa sapien non odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi.</p>
-    </div>
-  </div>
+<div id="footer">
+  Copyright 2012 - cardtapapp.com
 </div>
-<div class="foot">
-  <div class="row">
-    <div class="span10 offset1">
-      <p>Copyright 2012 - peerreviewit.github.com</p>
-    </div>
-  </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src='swipe.js'></script>
+<script>
+var slider4 = new Swipe(document.getElementById('slider'));
+</script>
+</body> 
+</html>
