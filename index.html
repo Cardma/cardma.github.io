@@ -46,6 +46,19 @@
     box-shadow: 3px 3px 2px 2px rgba(0,0,0,.25);
     
   }
+  .go {
+    color:rgba(0,0,0,0);
+    height:40px;
+    width:40px;
+    display:block;
+  }
+  .forward {
+    color:rgba(0,0,0,0);
+    background:url(img/media-seek-forward-6.png);
+  }
+  .back {
+    background:url(img/media-seek-reverse-6.png);
+  }
 </style>
 <body>
 <div id="bumper">
@@ -63,9 +76,9 @@
   </div>
 </div>
 <div id="navigation">
-  <span style="float:left;"><a href='#' onclick='slider4.prev();return false;'>prev</a></span>
-  <span style="float:right;"><a href='#' onclick='slider4.next();return false;'>next</a></span>
-  <span style="clear:both">&nbsp;</span>
+  <div style="float:left; "><a href='#' class="go back" onclick='slider4.prev();return false;'>prev</a></div>
+  <div style="float:right;"><a href='#' class="go forward" onclick='slider4.next();return false;'>next</a></div>
+  <div style="clear:both; line-height:0;">&nbsp;</div>
 </div>
 </div>
 <div id="footer">
