@@ -81,10 +81,10 @@
   }
   @media all and (min-width:700px) {
     .back {
-      padding-left:100px;    
+      margin-left:100px;    
     }
     .forward {
-      padding-right:100px;
+      margin-right:100px;
     }
   }
   
@@ -94,10 +94,16 @@
     width:100%;
     display:block;
   }
-  .go,.go2 {
-    height:40px;
+  .go2 {
+    height:60px;
     width:50px;
-    padding-top:80px;
+  }
+  .go {
+    border-radius:5px;
+    height:60px;
+    width:50px;
+    padding:80px 5px 80px 5px;
+    background:rgba(0,0,0,.2);
   }
   .forward a {
     background:url(img/media-seek-forward-6.png) no-repeat;
@@ -126,7 +132,7 @@
     <div id="nav-small" style="width:300px;margin:auto;">
     <div style="float:left; " class="go2 back"   ><a href='#' onclick='slider4.prev();return false;'>prev</a></div>
     <div style="float:right;" class="go2 forward"><a href='#' onclick='slider4.next();return false;'>next</a></div>
-    <p   style="padding-top:96px;text-align:center;color:white;">Navigation</p>
+    <p   style="padding-top:15px;text-align:center;color:white;">Navigation</p>
     <div style="clear:both; line-height:0;">&nbsp;</div>
     </div>
   </div>
