@@ -16,7 +16,7 @@
     font-weight:normal;
     display:block;
   }
-  #slider {
+  #sliderbox {
     padding-top:150px;
   }
   #navigation {
@@ -35,65 +35,101 @@
     height:50px;
     background:white;
   }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 540px) {
     .cards > div > div {
       width :320px;
       height:160px;
       background: white;
       border:1px solid gray;
       margin:auto;
-      margin-bottom:50px;
       padding:10px;
       box-shadow: 3px 3px 2px 2px rgba(0,0,0,.25);
-
+    }
+    .go {
+      display:none;
+    }
+    #nav-small {
+      display:block;
     }
   }
-  @media all and (min-width: 401px) {
+  @media all and (min-width: 541px) {
     .cards > div > div {
       width :380px;
       height:200px;
       background: white;
       border:1px solid gray;
       margin:auto;
-      margin-bottom:50px;
       padding:10px;
       box-shadow: 3px 3px 2px 2px rgba(0,0,0,.25);
       
     }
+    #nav-small {
+      display:none;
+    }
+    .go {
+      display:block;
+    }
   }
-  .go {
+  
+  @media all and (max-width:699px) and (min-width:541px) {
+    .back {
+      padding-left:10px;    
+    }
+    .forward {
+      padding-right:10px;
+    }
+  }
+  @media all and (min-width:700px) {
+    .back {
+      padding-left:100px;    
+    }
+    .forward {
+      padding-right:100px;
+    }
+  }
+  
+  .go a,.go2 a {
     color:rgba(0,0,0,0);
-    height:40px;
-    width:40px;
+    height:100%;
+    width:100%;
     display:block;
   }
-  .forward {
-    color:rgba(0,0,0,0);
-    background:url(img/media-seek-forward-6.png);
+  .go,.go2 {
+    height:40px;
+    width:50px;
+    padding-top:80px;
   }
-  .back {
-    background:url(img/media-seek-reverse-6.png);
+  .forward a {
+    background:url(img/media-seek-forward-6.png) no-repeat;
+  }
+  .back a {
+    background:url(img/media-seek-reverse-6.png) no-repeat;
   }
 </style>
 <body>
 <div id="bumper">
 <div id="container">
-  <div id='slider' class='swipe'>
-    <div class="cards">
-      <div style='display:block'><div>
-        <h1>Card Tap App <small>A Realistic - Nearly Tactile Experience on the iPhone</small></h1>
-      </div></div>
-      <div style='display:none'><div>2</div></div>
-      <div style='display:none'><div>3</div></div>
-      <div style='display:none'><div>4</div></div>
-      <div style='display:none'><div>5</div></div>
+  <div id="sliderbox">
+    <div style="float:left; " class="go back"   ><a href='#' onclick='slider4.prev();return false;'>prev</a></div>
+    <div style="float:right;" class="go forward"><a href='#' onclick='slider4.next();return false;'>next</a></div>
+    <div id='slider' class='swipe'>
+      <div class="cards">
+        <div style='display:block'><div>
+          <h1><img style="width:85px;height:30px;" src="#"/>Card Tap App <small>A Realistic - Nearly Tactile Experience on the iPhone</small></h1>
+        </div></div>
+        <div style='display:none'><div>2</div></div>
+        <div style='display:none'><div>3</div></div>
+        <div style='display:none'><div>4</div></div>
+        <div style='display:none'><div>5</div></div>
+      </div>
+    </div>
+    <div id="nav-small" style="width:300px;margin:auto;">
+    <div style="float:left; " class="go2 back"   ><a href='#' onclick='slider4.prev();return false;'>prev</a></div>
+    <div style="float:right;" class="go2 forward"><a href='#' onclick='slider4.next();return false;'>next</a></div>
+    <p   style="padding-top:96px;text-align:center;color:white;">Navigation</p>
+    <div style="clear:both; line-height:0;">&nbsp;</div>
     </div>
   </div>
-</div>
-<div id="navigation">
-  <div style="float:left; "><a href='#' class="go back" onclick='slider4.prev();return false;'>prev</a></div>
-  <div style="float:right;"><a href='#' class="go forward" onclick='slider4.next();return false;'>next</a></div>
-  <div style="clear:both; line-height:0;">&nbsp;</div>
 </div>
 </div>
 <div id="footer">
