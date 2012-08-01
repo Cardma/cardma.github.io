@@ -41,6 +41,16 @@
     margin:auto;
     padding:10px;
     box-shadow: 3px 3px 2px 2px rgba(0,0,0,.25);
+    
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top, #efefef 0%, #c9c9c9 17%, #fefefe 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(17%,#c9c9c9), color-stop(99%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* IE10+ */
+    background: linear-gradient(to bottom, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    
   }
   @media all and (max-width: 540px) {
     .cards > div > div {
