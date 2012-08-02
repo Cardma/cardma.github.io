@@ -135,7 +135,30 @@
 <body>
 <div id="bumper">
 <div id="container">
-  <div id="sliderbox">
+  <div class="navbar navbar-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#" onclick='slider4.slide(0,500);return false'>CardTap</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="#" onclick='slider4.slide(1,500);return false'>About</a>
+          </li>
+          <li class="">
+            <a href="#" onclick='slider4.slide(2,500);return false'>Download</a>
+          </li>
+          <li class="">
+            <a href="#" onclick='slider4.slide(3,500);return false'>Contact</a>
+          </li>
+          <li class="">
+            <a href="#" onclick='slider4.slide(4,500);return false'>Jobs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>  
+<div id="sliderbox">
     <div style="float:left; " class="go back"   ><a href='#' onclick='slider4.prev();return false;'>prev</a></div>
     <div style="float:right;" class="go forward"><a href='#' onclick='slider4.next();return false;'>next</a></div>
     <div id='slider' class='swipe'>
