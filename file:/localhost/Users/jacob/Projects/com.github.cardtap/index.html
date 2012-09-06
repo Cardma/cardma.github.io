@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<title>Bootstrap 101 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<style>
+  * {color:white;}
+  body {background:url(/black-Linen_@2X.png);}
+  #play {
+    margin:0 auto;
+    width:86px;
+    height:85px;
+    background:url(/video-play-hover.png);
+  }
+  #play:hover {
+    background:url(/video-play.png);
+  }
+</style>
+<div class="container" style="text-align:center;">
+  
+  <div class="row">
+    <div class="span8 offset2">
+    	<div class="navbar">
+      	<div class="navbar-inner">
+      	  <ul class="nav">
+      	    <li class="active"><a href="/">Home</a></li>
+            <li><a href="/download">Download</a></li>
+      	  </ul>
+          <img class="pull-right" src="name-light.png"/>
+      	</div>
+    	</div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="span8 offset2">
+      <h1><img src="CardTapApp_Logo5.png" width="224" height="90" alt="CardTap"></h1>
+      <p class="lead">Share Touchable, Digital Business Card</p>
+      <div style="display:none;"><img src="video-play.png"/></div>
+      <div style="margin:0 auto; height:317px; width:471px; background:url(card-backdrop.png) no-repeat; margin-bottom:100px;" onClick="$('#video').css('display','inline');">
+        <div style="padding-top:120px;"><a class="iframe" href="http://www.youtube.com/embed/Bf6-arMMm48?autoplay=1"><div id="play">&nbsp;</div></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span6 offset3">
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label" for="inputPassword">Reigster for Download</label>
+          <div class="controls">
+            <input type="text" id="inputEmail" placeholder="Email Address">
+            <button type="submit" class="btn">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="span8 offset2">
+      <hr style="margin-top:80px;"/>
+    </div>
+  </div>
+  
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script>
+$(document).ready(function() {
+	$("a.iframe").fancybox();	
+});
+</script>
+=======
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link rel="stylesheet" href="/css/bootstrap-responsive.min.css"/>
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<style>
+  * { margin:0; padding:0; }
+  html, body {
+    height:100%;
+  }
+  body {
+    background:url(img/low_contrast_linen.png);
+  }
+  h1 {
+    font-family:sans-serif;
+    color:#555;
+  }
+  h1 small {
+    color:black;
+    font-size:.5em;
+    font-weight:normal;
+    display:block;
+  }
+  #sliderbox {
+    padding-top:150px;
+  }
+  #navigation {
+    background:rgba(150,150,150,.5);
+    padding:10px;
+    width:320px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+  }
+  #bumper {
+    height:100%;
+  }
+  .cards > div > div {
+    background:#fff;
+    border:1px solid gray;
+    margin:auto;
+    padding:10px;
+    box-shadow: 3px 3px 2px 2px rgba(0,0,0,.25);
+    
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top, #efefef 0%, #c9c9c9 17%, #fefefe 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(17%,#c9c9c9), color-stop(99%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* IE10+ */
+    background: linear-gradient(to bottom, #efefef 0%,#c9c9c9 17%,#fefefe 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    
+  }
+  @media all and (max-width: 540px) {
+    .cards > div > div {
+      width :320px;
+      height:160px;
+    }
+    .go {
+      display:none;
+    }
+    #nav-small {
+      display:block;
+    }
+  }
+  @media all and (min-width: 541px) {
+    .cards > div > div {
+      width :380px;
+      height:200px;
+      
+    }
+    #nav-small {
+      display:none;
+    }
+    .go {
+      display:block;
+    }
+  }
+  
+  @media all and (max-width:699px) and (min-width:541px) {
+    .back {
+      padding-left:10px;    
+    }
+    .forward {
+      padding-right:10px;
+    }
+  }
+  @media all and (min-width:700px) {
+    .back {
+      margin-left:100px;    
+    }
+    .forward {
+      margin-right:100px;
+    }
+  }
+  .go a {
+    width:50px;
+    height:60px;
+    padding:80px 5px 80px 5px;
+    color:rgba(0,0,0,0);
+    display:block;
+  }
+  .go2 {
+    height:60px;
+    width:50px;
+    margin-top:15px;
+  }
+  .go2 a {
+    color:rgba(0,0,0,0);
+    display:block;
+  }
+  .go {
+    border-radius:5px;
+    background:rgba(0,0,0,.2);
+  }
+  .forward a {
+    background:url(img/media-seek-forward-6.png) no-repeat center;
+  }
+  .back a {
+    background:url(img/media-seek-reverse-6.png) no-repeat center;
+  }
+  #footer {
+    background:rgba(0,0,0,.2);
+    color:#eeeeee;
+    text-align:center;
+    
+    margin-top:-50px;
+    padding-top:20px;
+    height:30px;
+  }
+</style>
+<body>
+<div id="bumper">
+<div id="container">
+  <div class="navbar navbar-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#" onclick='slider4.slide(0,500);return false'>CardTap</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="#" onclick='slider4.slide(1,500);return false'>About</a>
+          </li>
+          <li class="">
+            <a href="#" onclick='slider4.slide(2,500);return false'>Download</a>
+          </li>
+          <li class="">
+            <a href="#" onclick='slider4.slide(3,500);return false'>Contact</a>
+          </li>
+          <li class="">
+            <a href="#" onclick='slider4.slide(4,500);return false'>Jobs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>  
+<div id="sliderbox">
+    <div style="float:left; " class="go back"   ><a href='#' onclick='slider4.prev();return false;'>prev</a></div>
+    <div style="float:right;" class="go forward"><a href='#' onclick='slider4.next();return false;'>next</a></div>
+    <div id='slider' class='swipe'>
+      <div class="cards">
+        <div style='display:block;'><div>
+          <p style="background:url(img/iphone4s.png) no-repeat; background-position:top left; margin-left;20px; float:left; height:100%; width:110px;">&nbsp;</p>
+          <h1>Card Tap</h1>
+          <div style="margin-top:40px;">A Realistic &mdash; Nearly Tactile &mdash; Card Sharing Experience on the iPhone</div>
+        </div></div>
+        <div style='display:none'><div>2</div></div>
+        <div style='display:none'><div>3</div></div>
+        <div style='display:none'><div>4</div></div>
+        <div style='display:none'><div>5</div></div>
+      </div>
+    </div>
+    <div id="nav-small" style="width:300px;margin:auto;">
+    <div style="float:left; " class="go2 back"   ><a href='#' onclick='slider4.prev();return false;'>prev</a></div>
+    <div style="float:right;" class="go2 forward"><a href='#' onclick='slider4.next();return false;'>next</a></div>
+    <p   style="padding-top:15px;text-align:center;color:white;">Navigation</p>
+    <div style="clear:both; line-height:0;">&nbsp;</div>
+    </div>
+  </div>
+</div>
+</div>
+<div id="footer">
+  Copyright 2012 - cardtapapp.com
+</div>
+<script src='swipe.js'></script>
+<script>
+var slider4 = new Swipe(document.getElementById('slider'));
+</script>
+</body> 
+</html>
+>>>>>>> 0ff0fb46d5d798fbfff449da8f2ba8cac6ba53fb
