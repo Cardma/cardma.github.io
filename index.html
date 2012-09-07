@@ -2,7 +2,6 @@
 <title>Card Tap App</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 <style>
   * {color:white;}
@@ -44,14 +43,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="span6 offset3">
-      <form method="POST" action="http://cardtap-meta.herokuapp.com/register" class="form-horizontal">
+    <div class="span8 offset2">
+      <form method="POST" action="http://cardtap-meta.herokuapp.com/register" class="form-inline">
         <div class="control-group">
-          <label class="control-label" for="inputPassword">Reigster for Download</label>
-          <div class="controls">
-            <input name="register[email]" type="text" id="inputEmail" placeholder="Email Address">
-            <button type="submit" class="btn">Register</button>
-          </div>
+          Reigster for Download
+          <input name="register[email]" type="text" id="inputEmail" placeholder="Email Address">
+          <button type="submit" class="btn">Register</button>
         </div>
       </form>
     </div>
