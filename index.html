@@ -45,11 +45,11 @@
   </div>
   <div class="row">
     <div class="span6 offset3">
-      <form class="form-horizontal">
+      <form method="POST" action="http://cardtap-meta.herokuapp.com/register" class="form-horizontal">
         <div class="control-group">
           <label class="control-label" for="inputPassword">Reigster for Download</label>
           <div class="controls">
-            <input type="text" id="inputEmail" placeholder="Email Address">
+            <input name="register[email]" type="text" id="inputEmail" placeholder="Email Address">
             <button type="submit" class="btn">Register</button>
           </div>
         </div>

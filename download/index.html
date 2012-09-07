@@ -37,11 +37,11 @@
       <p>We are currently testing Card Tap with a limited audience.
          If you would like to be notified when Card Tap is publicly available please register below.
          Some registrants will also be given early access during private testing.</p>
-      <form class="form-inline">
+      <form class="form-inline" method="POST" action="http://cardtap-meta.herokuapp.com/register" >
         <div class="control-group">
           <div class="controls">
             <legend style="color:#aaa;">Register for Download</legend>
-            <input type="text" id="inputEmail" placeholder="Email Address">
+            <input type="text" id="inputEmail" placeholder="Email Address" name="register[email]">
             <button type="submit" class="btn">Register</button>
           </div>
         </div>
